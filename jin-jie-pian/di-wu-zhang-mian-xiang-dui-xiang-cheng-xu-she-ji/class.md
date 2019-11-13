@@ -5,7 +5,7 @@ tags: 面向对象
 categories: python
 ---
 
-# 类
+# 1.类
 
 ## 面向对象
 

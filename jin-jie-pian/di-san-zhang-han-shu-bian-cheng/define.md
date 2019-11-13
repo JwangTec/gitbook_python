@@ -5,7 +5,7 @@ tags: 函数定义
 categories: python
 ---
 
-# 函数
+# 1. 函数
 
 ## 函数基本定义
 

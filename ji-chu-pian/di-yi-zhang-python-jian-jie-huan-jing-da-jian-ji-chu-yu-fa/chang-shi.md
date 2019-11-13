@@ -5,7 +5,7 @@ tags: python
 categories: python
 ---
 
-# 常识
+# 1.常识
 
 ## python常识
 

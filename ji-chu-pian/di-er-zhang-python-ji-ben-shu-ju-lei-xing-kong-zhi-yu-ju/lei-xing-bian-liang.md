@@ -5,7 +5,7 @@ tags: 内置对象
 categories: python
 ---
 
-# 类型，变量
+# 1. 类型，变量
 
 ## 常用内置对象
 

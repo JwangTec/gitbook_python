@@ -5,7 +5,7 @@ tags: list
 categories: python
 ---
 
-# 列表
+# 1. 列表
 
 ```text
 数据结构：组织并存取数据

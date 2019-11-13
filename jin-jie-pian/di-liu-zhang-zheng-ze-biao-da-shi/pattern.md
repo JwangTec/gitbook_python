@@ -7,7 +7,7 @@ tags:
 categories: python_study
 ---
 
-# 正则语句
+# 1. 正则语句
 
 ## 参考地址：[正则表达式运用](https://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html)
 

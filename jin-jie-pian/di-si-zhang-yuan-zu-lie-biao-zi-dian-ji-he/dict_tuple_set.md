@@ -6,7 +6,7 @@ tags: 字典
 categories: python
 ---
 
-# 字典、元组、集合
+# 2. 字典、元组、集合
 
 ## 字典: 键值对 key - value
 
