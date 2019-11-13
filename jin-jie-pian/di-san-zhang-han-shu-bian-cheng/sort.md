@@ -1,19 +1,19 @@
 ---
-title:  "python sort"
-date: 2019-04-20 19:01:53 +0800
+title: python sort
+date: '2019-04-20 19:01:53 +0800'
 tags: 排序
 categories: python
 ---
 
-### 资料博客：
+# 排序
+
+## 资料博客：
 
 [十大金典排序](https://www.jianshu.com/p/47170b1ced23)
 
-#### 1. 鸡尾酒排序 左右同时进行冒泡排序
+### 1. 鸡尾酒排序 左右同时进行冒泡排序
 
-<!--more-->
-
-```
+```text
 def cocktaisort(list2):
     left = 0
     right = len(list2) - 1
@@ -31,12 +31,11 @@ def cocktaisort(list2):
                 list2[i - 1] = temp1
         left+=1
         return list2
-
 ```
 
-#### 2. 冒泡排序  顺序比较  两两比较，依次后移        性能较低
+### 2. 冒泡排序  顺序比较  两两比较，依次后移        性能较低
 
-```
+```text
 def sort(list1):
     num = len(list1)
     if num == 0:
@@ -54,9 +53,9 @@ def sort(list1):
     return  list1
 ```
 
-#### 3. 简化冒泡排序     
+### 3. 简化冒泡排序
 
-```
+```text
 def sort_bubble(list1):
     for i in range(len(list1)):
         j = 0
@@ -69,9 +68,9 @@ def sort_bubble(list1):
     return list1
 ```
 
-#### 4. 简单选择排序
+### 4. 简单选择排序
 
-```
+```text
 def simpesort(list1):
     num = len(list1)
     if num == 0:
@@ -87,9 +86,9 @@ def simpesort(list1):
     return list1
 ```
 
-#### 5. 直接插入排序:取出i + 1的元素 与前面排好序的元素从后向前比较，小于等于则将i+1元素插入到该位置（有一定序的时候效率最高）
+### 5. 直接插入排序:取出i + 1的元素 与前面排好序的元素从后向前比较，小于等于则将i+1元素插入到该位置（有一定序的时候效率最高）
 
-```
+```text
 def insert_sort(list1):
     length = len(list1)
     if len(list1) == 0:
@@ -104,9 +103,9 @@ def insert_sort(list1):
     return list1
 ```
 
-#### 6. 二分插入排序  排好序的为一个数组，未排好序的为另一个
+### 6. 二分插入排序  排好序的为一个数组，未排好序的为另一个
 
-```
+```text
 def Binaryinsertsort(list1):
     if len(list1) == 0:
         return list1
@@ -126,9 +125,9 @@ def Binaryinsertsort(list1):
     return list1
 ```
 
-#### 7.归并排序 空间换时间，多了一个tmp列表占用内存，但时间减少为n*logn
+### 7.归并排序 空间换时间，多了一个tmp列表占用内存，但时间减少为n\*logn
 
-```
+```text
 def merge_sort(list1):
     if len(list1) < 2:
         return list1
@@ -159,9 +158,9 @@ def merge_sort(list1):
         return tmp
 ```
 
-### 调用所有排序
+## 调用所有排序
 
-```
+```text
 def random_sort(sort_name):
     import random
     list1 = list()
@@ -174,12 +173,11 @@ list2 = [cocktaisort,sort,sort_bubble,simpesort,Binaryinsertsort,merge_sort]
 
 for xx in list2:
     random_sort(xx)
-
 ```
 
-### 使用装饰器计算程序运行时间
+## 使用装饰器计算程序运行时间
 
-```
+```text
 def dec(fun):             #装饰器：计算运行时间
     def res(*args,**kwarges):
         print('--------%s 算法-------------' % (fun.__name__))
@@ -189,7 +187,7 @@ def dec(fun):             #装饰器：计算运行时间
         print('******************')
         return a
     return res
-    
-在需要计算时间的函数前加上 @dec 即可（详见test19.py）
 
+在需要计算时间的函数前加上 @dec 即可（详见test19.py）
 ```
+

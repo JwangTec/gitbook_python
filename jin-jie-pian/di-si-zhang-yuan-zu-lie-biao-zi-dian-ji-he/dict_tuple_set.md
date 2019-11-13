@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "dict字典 tuple元祖 set集合"
-date:   2019-04-21 18:01:53 +0800
+title: dict字典 tuple元祖 set集合
+date: '2019-04-21 18:01:53 +0800'
 tags: 字典
 categories: python
 ---
 
-#### 字典: 键值对 key - value
+# 字典、元组、集合
 
-<!--more-->
+## 字典: 键值对 key - value
 
 1.申明
 
-```
+```text
 dict1 = {'a':1,'b':2,'c':3}   #其中的每一个键值对都与下标无关，即与位置无关
 dict2 = {'b':2,'a':1,'c':3}
 print(dict1)
@@ -21,7 +21,7 @@ print(dict1['a'])
 
 2.dict内置方法
 
-```
+```text
 dict3 = {'b':2,'a':1,'c':3,'d':dict1}
 print(dict3.keys())        #打印所有的键
 
@@ -53,12 +53,11 @@ dict2['world'] = 'e'    #无则添加该键值
 print(dict2)
 dict2['c'] = 'f'    #有则修改该键对应的值
 print(dict2)
-
 ```
 
 3.优化斐波拉契
- 
- ```
+
+```text
  dict1 = {}
  def fib(n):
      if n == 1 or n == 2:
@@ -76,12 +75,11 @@ print(dict2)
              dict1[n-2] = x2
          return x1 + x2
  print(fib(5))
- 
- ```
-
-#### tuple:元祖  不可修改的列表
-
 ```
+
+## tuple:元祖  不可修改的列表
+
+```text
 可拆包
 不可变 （针对某些元素）
 用于轻量级数据中
@@ -91,12 +89,11 @@ print(dict2)
  tup2,tup3 = ('aa','bb')  #可以拆包
  print(tup3)
  print(tup2)
-
 ```
 
 1.tuple取值：
 
-```
+```text
 1,下标取值
 2。拆包
 
@@ -106,13 +103,11 @@ for tup1,tup2 in d.items():     #若不需要tup1则可以写成 _ , tup2
 for _,v in d.items():
     print(v)
 l2 = [(k,v) for k,v in d.items()] #变成列表
-
 ```
 
+## set:集合
 
-#### set:集合  
-
-```
+```text
 元素不重合
 可做集合运算 &（交集） |（并集） -（差集）
 
@@ -122,12 +117,11 @@ s1 = ({1,2,3,3,4,5,2,3,4})    #自动去掉重复的元素，不能嵌套list,di
 print(s)
 print(s1)
 list1 = [1,2,3,4,5,2,3,4,2,2]
-
 ```
 
-#### 浅复制
+## 浅复制
 
-```
+```text
  a = [1,2,3,4,5]
  b = a[:]       #此时b重新指向另一个地址 但如果其中内嵌容器，则只会对数值改变，容器仍指向原地址
 
@@ -155,5 +149,5 @@ l1.append(100)
 l1[1].remove(44)
 l2[1] += [11,22]
 l2[2] += (2,3)     #生成新的tuple但其内嵌的列表地址未改变，相当于浅复制
-
 ```
+

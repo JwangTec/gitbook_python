@@ -1,50 +1,55 @@
 ---
-title:  "python list"
-date:   2019-04-19 16:01:53 +0800
+title: python list
+date: '2019-04-19 16:01:53 +0800'
 tags: list
 categories: python
 ---
 
-### list 列表
+# 列表
 
-
-<!--more-->
-
-
-```
+```text
 数据结构：组织并存取数据
 list:有序的集合，列表 ，是一种数据结构
 创建方式
 取值方式
-
 ```
 
 1.申明方式
 
-	list1 = ['a',2,3,[1,2,3,4,[1,2,3]],'abcde']
+```text
+list1 = ['a',2,3,[1,2,3,4,[1,2,3]],'abcde']
+```
 
 2.将字符串转化为列表
 
-	list2 = list("a,b")
-	print(list2)
+```text
+list2 = list("a,b")
+print(list2)
+```
 
 3.下标取值,下标取首不取尾,与数组相似取值方式
 
-	print(list1[3][4][1])
-	print(list1[0:3])
+```text
+print(list1[3][4][1])
+print(list1[0:3])
+```
 
 4.最后一个元素取法
 
-	print(list1[-1])
-	print(list1[len(list1)-1])    #列表不能为空
+```text
+print(list1[-1])
+print(list1[len(list1)-1])    #列表不能为空
+```
 
 5.使用的len语句是计算的该列表中有多少个元素
 
-	print(len(list1[3]))
+```text
+print(len(list1[3]))
+```
 
 6.元素更改
 
-```
+```text
 print(list1[1])
 list1[1] = "b"         #元素修改
 print(list1[1])
@@ -56,7 +61,7 @@ list1.remove('a')        #找到该元素并移除 返回为none
 range(start_num,end_num,间隔)：有序的一组数字
 ```
 
-```
+```text
 list2 = [1,'hello', 'world','c','d',[1,2,3,[1,2],5]]   #打印输出列表所有元素
 for i in list2:                                  #for循环会将列表中存在的字符串也分开打印，例如'asd',for后为 'a','s','d'
     if not type(i) == list:                     #判断类别
@@ -70,17 +75,19 @@ def for_list(list1):                 #使用函数打印所有列表中的元素
             for_list(i)
         else:
             print(i)
-for_list([1,2,3,[1,2,[1,2,[12,34,['aasas','asadadf']]]]])  
+for_list([1,2,3,[1,2,[1,2,[12,34,['aasas','asadadf']]]]])
 ```
 
 7.列表切分
 
-	list3 = [1,2,3,4,5]
-	print(list3[1:3])   #切分1-2下标元素 长度为下标差
+```text
+list3 = [1,2,3,4,5]
+print(list3[1:3])   #切分1-2下标元素 长度为下标差
+```
 
 8.容器序列（容器）和编排序列（真正的数据）
 
-```
+```text
 list1 --> 容器(列表，元祖等） [1,2,3,4,5],[True,False] --> 编排序列
 
 传统生成方式
@@ -110,12 +117,11 @@ while i < (len(list4)):
     i += 1
 
 print(l2)
-
-```
-9.切片  取左不取右 前闭后开
-
 ```
 
+9.切片 取左不取右 前闭后开
+
+```text
 list1= [i for i in range(1,11,1)]
 print(list1)
 xx = list1[2:4]   #2,3  便于计算切片的数量：4-2
@@ -133,12 +139,11 @@ print(l2)     #两者区分，一个取值一个切片仍是列表
 # print(id(list1[3:4]))
 # print(id(xx))
 # print(id(yy))
-
 ```
 
 10.引用规则：python中变量是引用而不是赋值
 
-```
+```text
 a = [1,2,3]
 b = a              #直接将a的地址给了b，未重新开空间 对两个变量进行操作时，都是对同一个地址中存储的数据操作
 a.append(4)
@@ -147,3 +152,4 @@ print(id(a))
 print(b)
 print(id(b))
 ```
+

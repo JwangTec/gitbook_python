@@ -1,15 +1,15 @@
 ---
-title:  "while循环嵌套练习题"
-date:   2019-04-18 08:01:53 +0800
+title: while循环嵌套练习题
+date: '2019-04-18 08:01:53 +0800'
 tags: while
 categories: python
 ---
 
-### 1、求 100-200以内同时能被2、3、5整除的第一个数
+# 练习3
 
-<!--more-->
+## 1、求 100-200以内同时能被2、3、5整除的第一个数
 
-```
+```text
 start_num = 100
 end_num = 200
 while start_num < end_num:
@@ -19,9 +19,9 @@ while start_num < end_num:
     start_num += 1
 ```
 
-### 2、打印200以内能被7整除又不包含7的数
+## 2、打印200以内能被7整除又不包含7的数
 
-```
+```text
 end_num = 200
 start_num = 1
 
@@ -32,12 +32,11 @@ while start_num <= end_num:
     if start_num % 7 == 0 and unit_3 != 7 and unit_2 != 7 and unit_1 != 7:
         print(start_num)
     start_num += 1
-
 ```
 
-### 3、9*9乘法表输出
+## 3、9\*9乘法表输出
 
-```
+```text
 i = 1
 xx = ""
 while i <= 9:
@@ -48,12 +47,11 @@ while i <= 9:
     i += 1
     xx += "\n"
 print(xx)
-
 ```
 
-### 4、求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。 例如2+22+222+2222+22222(此时共有5个数相加)，几个数相加有键盘控制。
+## 4、求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。 例如2+22+222+2222+22222\(此时共有5个数相加\)，几个数相加有键盘控制。
 
-```
+```text
 numa = input("请输入要相加的数字0~9：")
 numb = int(input("请输入需要相加几次："))
 xx = ""
@@ -67,9 +65,9 @@ while i <= numb:
 print("最后相加结果为：%d" %sum_s)
 ```
 
-### 5、一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在 第10次落地时，共经过多少米？第10次反弹多高？
+## 5、一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在 第10次落地时，共经过多少米？第10次反弹多高？
 
-```
+```text
 total = 1
 high_start = 100
 high_end = 0
@@ -79,14 +77,12 @@ while total <= 10:
     total += 1
 ```
 
-### 6、打印如下图形
-      *********
-      *       *
-      *       *
-      *********
-      
-```
+## 6、打印如下图形
 
+* \*
+* \*
+
+```text
 i = 1
 while i <= 4:
     if i == 1 or i == 4:
@@ -95,18 +91,16 @@ while i <= 4:
     else:
         print(" " * 5 +"*" + " " * 7 + "*")
         i += 1
+```
 
+```text
+       *
+      ***
+     *****
+    *******
 ```
-		
-		*******
-		 *****
-		  ***
-		   *
-		  ***
-		 *****
-		*******
-   		
-```
+
+```text
 n = 7
 mid = n // 2 + 1
 i = 1
@@ -120,10 +114,9 @@ while n >= i:
     print(" "*space_num + "*" * star_num)
 
     i += 1
-    
-```
 ```
 
+```text
 n = 5
 a = n                          #3
 j = 2 * n + 1                  #7
@@ -133,15 +126,16 @@ while j > 0:                   #循环7次
     line_num = abs(2 * a) + 1  #  *  数
     a -= 1                     #  a递减 3 2 1 0 -1 -2 -3
     print(" "* (space_num) + "*" *line_num )
-
 ```
 
-         A
-        ABA
-       ABCBA
-      ABCDCBA
-
+```text
+     A
+    ABA
+   ABCBA
+  ABCDCBA
 ```
+
+```text
 theStr = input('please input the letter:\n')
 theCode = ord(theStr)
 i = 65
@@ -159,15 +153,14 @@ while i <= theCode:
     print("\n")
 ```
 
-```
+```text
          1
         121
        12321
       1234321
-
 ```
 
-```
+```text
 i = 0
 higth = 6
 while i < higth:
@@ -183,17 +176,14 @@ while i < higth:
         k += 1
         print(num_1)
     i += 1
-
 ```
 
-		******
-		*****
-		****
-		***
-		**
-		*
-		
+```text
+    **
+    *
 ```
+
+```text
 i = 0
 num = 6
 while i < 6:
@@ -201,5 +191,5 @@ while i < 6:
     i += 1
     num = num - 1
     print(string)
-
 ```
+

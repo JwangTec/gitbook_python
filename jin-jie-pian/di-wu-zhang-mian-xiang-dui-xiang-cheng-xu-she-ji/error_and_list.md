@@ -1,16 +1,15 @@
 ---
-title:  "python 报错/自定义列表"
-date:   2019-04-27 20:01:53 +0800
+title: python 报错/自定义列表
+date: '2019-04-27 20:01:53 +0800'
 tags: 异常类
 categories: python
 ---
 
+# 错误、异常和实现列表类
 
-###  异常类 ：报告错误 --> 中断 运行
+## 异常类 ：报告错误 --&gt; 中断 运行
 
-<!--more-->
-
-```
+```text
 #只会监听特殊类型的错误
 try:
     xx = [qxaas]
@@ -19,12 +18,11 @@ except NameError:
     print('cuo  wu')
 
 # class TestError(Exception):  #exception属于报错的父类，继承即可
-
 ```
 
-###  自定义报错
+## 自定义报错
 
-```
+```text
 class TestError(Exception):  #自定义一个报错
     pass
 def rujiao(age):
@@ -55,13 +53,11 @@ finally:  #若上述未出现错误或中断：至少会执行该命令
     print('-------')
 
 print('xxxxxxxxxx')
-
 ```
 
+## 编写列表类，实现列表的基础方法
 
-###  编写列表类，实现列表的基础方法
-
-```
+```text
 class Node:
     def __init__(self, v, n):
         self.value = v
@@ -290,5 +286,5 @@ print(l1+l2)
 # l = MyListV2(6, 7, 8, 9, 10)
 #
 # l.append(9)
-
 ```
+

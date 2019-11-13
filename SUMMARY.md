@@ -1,54 +1,34 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 
 ## 基础篇
 
-* 第一章 python简介，环境搭建，基础语法
-
-	 * [常识](basic/常识.md)
-	 * [os](basic/os.md)
-	 * [练习](practice/运算.md)
-
----
-
-* 第二章 python 基本数据类型，控制语句
-
-	 * [类型，变量](basic/类型_变量.md)
-	 * [控制语句](basic/控制语句.md)
-	 * [练习1](practice/类型变量.md)
-	 * [练习2](practice/语句体.md)
-	 * [练习3](practice/while.md)
-
----
+* [第一章 python简介](ji-chu-pian/di-yi-zhang-python-jian-jie-huan-jing-da-jian-ji-chu-yu-fa/README.md)
+  * [常识](ji-chu-pian/di-yi-zhang-python-jian-jie-huan-jing-da-jian-ji-chu-yu-fa/chang-shi.md)
+  * [os](ji-chu-pian/di-yi-zhang-python-jian-jie-huan-jing-da-jian-ji-chu-yu-fa/os.md)
+  * [练习](ji-chu-pian/di-yi-zhang-python-jian-jie-huan-jing-da-jian-ji-chu-yu-fa/yun-suan.md)
+* [第二章 python 基础](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/README.md)
+  * [类型，变量](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/lei-xing-bian-liang.md)
+  * [控制语句](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/kong-zhi-yu-ju.md)
+  * [练习1](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/lei-xing-bian-liang-1.md)
+  * [练习2](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/yu-ju-ti.md)
+  * [练习3](ji-chu-pian/di-er-zhang-python-ji-ben-shu-ju-lei-xing-kong-zhi-yu-ju/while.md)
 
 ## 进阶篇
 
-* 第三章 函数编程
+* [第三章 函数编程](jin-jie-pian/di-san-zhang-han-shu-bian-cheng/README.md)
+  * [函数](jin-jie-pian/di-san-zhang-han-shu-bian-cheng/define.md)
+  * [排序](jin-jie-pian/di-san-zhang-han-shu-bian-cheng/sort.md)
+  * [练习](jin-jie-pian/di-san-zhang-han-shu-bian-cheng/han-shu.md)
+* [第四章 元组、列表、字典](jin-jie-pian/di-si-zhang-yuan-zu-lie-biao-zi-dian-ji-he/README.md)
+  * [列表](jin-jie-pian/di-si-zhang-yuan-zu-lie-biao-zi-dian-ji-he/list.md)
+  * [字典、元组、集合](jin-jie-pian/di-si-zhang-yuan-zu-lie-biao-zi-dian-ji-he/dict_tuple_set.md)
+  * [模块](jin-jie-pian/di-si-zhang-yuan-zu-lie-biao-zi-dian-ji-he/module.md)
+  * [练习](jin-jie-pian/di-si-zhang-yuan-zu-lie-biao-zi-dian-ji-he/list-1.md)
+* [第五章 面向对象程序设计](jin-jie-pian/di-wu-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji/README.md)
+  * [类](jin-jie-pian/di-wu-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji/class.md)
+  * [错误、异常和实现列表类](jin-jie-pian/di-wu-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji/error_and_list.md)
+* [第六章 正则表达式](jin-jie-pian/di-liu-zhang-zheng-ze-biao-da-shi/README.md)
+  * [正则语句](jin-jie-pian/di-liu-zhang-zheng-ze-biao-da-shi/pattern.md)
 
-	 * [函数](basic/define.md)
-	 * [排序](basic/sort.md)
-	 * [练习](practice/函数.md)
-
----
-
-* 第四章 元组、列表、字典、集合
-
-	 * [列表](basic/list.md)
-	 * [字典、元组、集合](basic/dict_tuple_set.md)
-	 * [模块](basic/module.md)
-	 * [练习](practice/list.md)
-
----
-
-* 第五章 面向对象程序设计
-
-	 * [类](basic/class.md)
-	 * [错误、异常和实现列表类](basic/error_and_list.md)
-
-
----
-
-* 第六章 正则表达式
-
-	* [正则语句](basic/pattern.md)

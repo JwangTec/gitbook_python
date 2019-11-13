@@ -1,15 +1,17 @@
 ---
-title:  "python 正则表达式"
-date:   2019-05-1 20:01:53 +0800
-tags: [正则表达式, re函数]
+title: python 正则表达式
+date: '2019-05-1 20:01:53 +0800'
+tags:
+  - 正则表达式
+  - re函数
 categories: python_study
 ---
 
-#### 参考地址：[正则表达式运用](https://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html)
+# 正则语句
 
-<!--more-->
+## 参考地址：[正则表达式运用](https://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html)
 
-```
+```text
 基础函数运用：
 
 
@@ -26,13 +28,11 @@ print(pattern.finditer('one1two2three'))
 pattern1 = re.compile(r'(\d\w+) (\d\w+)')  
 #相互交换位置
 print(pattern1.sub(r'\2 \1','1one 2two'))
-
 ```
 
+## 正则表达式：邮箱等规则字符串可用   re函数
 
-####  正则表达式：邮箱等规则字符串可用   re函数
-
-```
+```text
 模糊查询：判断主题是字符串
 特殊字符：
 \d:数字（一个数字（开始为数字则正确））
@@ -40,7 +40,6 @@ print(pattern1.sub(r'\2 \1','1one 2two'))
 \w:单词字符
 \W:非单词字符
 \s:空白字符
-[1-9]: 1到9数字
 [a-z|A-Z]:
 
 转义符：\
@@ -62,11 +61,11 @@ $:以XXX结尾
 \Z:相当于:\w$
 {0,5}：格式重复次数0到5次
 r:转译符，r'  '
-
 ```
-#### re函数
 
-```
+## re函数
+
+```text
 match:尽量不匹配，找到一个马上返回
 search：
 findall:尽量匹配
@@ -114,10 +113,9 @@ import re
 # content = 'Hello 12345 World'
 # result = re.match('^Hello\s(\d+)\sWorld', content)
 # print(result.group())
-
 ```
 
-```
+```text
 贪婪模式
 # content = 'http://weibo.com/comment/kEraCNdsfgkdsfgjkldsjkl'
 # result1 = re.match('http.*?comment/(.*?)', content)
@@ -130,5 +128,5 @@ import re
 # print(result.group(1))  # 结果
 # result = re.match('^He.*(\d+).*Demo$', content)
 # print(result.group(1))  # 结果 7
-
 ```
+
